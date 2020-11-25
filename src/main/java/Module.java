@@ -38,11 +38,22 @@ public class Module{
 	}
 	
 	
+	// Adds students to Module's ArrayList 'students'
+	public void addStudent(String s) {
+		students.add(s);
+	}
+	
+	
 	// Accessor method for students
 	public List<String> getStudents() {
 		return students;
 	}
 	
+	
+	// Adds a module's associated course to ArrayList 'linkedCourses'
+	public void addLinkedCourses(String s) {
+		linkedCourses.add(s);
+	}
 	
 	// Accessor method for linked courses
 	public List<String> getLinkedCourses() {

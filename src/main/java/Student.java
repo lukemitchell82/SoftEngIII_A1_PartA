@@ -10,7 +10,7 @@ public class Student {
 	private String dob;
 	private int id;
 	private String course;
-	private ArrayList<String> modules = new ArrayList<String>();
+	private List<String> modules = new ArrayList<String>();
 	private String username;
 	
 	// Student constructor
@@ -68,12 +68,13 @@ public class Student {
 		return course;
 	}
 	
+	// Adds a module to Student's ArrayList called modules
 	public void addModule(String s) {
 		modules.add(s);
 	}
 	
 	// Accessor method for modules a student is enrolled in
-	public ArrayList<String> getModules() {
+	public List<String> getModules() {
 		return modules;
 	}
 }

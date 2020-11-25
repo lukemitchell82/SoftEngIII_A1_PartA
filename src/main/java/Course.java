@@ -38,14 +38,24 @@ public class Course {
 	}
 	
 	
-	// Accessor method for module name
+	// Adds modules to modules ArrayList
+	public void addToModuleList(String s) {
+		listOfModules.add(s);
+	}
+	
+	// Accessor method for list of modules
 	public ArrayList<String> getModuleList() {
 		return listOfModules;
 	}
 	
 	
+	// Adds students to students ArrayList
+	public void addToStudentList(String s) {
+		listOfStudents.add(s);
+	}
+	
 	// Accessor method for list of students
-	public ArrayList<String> getStudentList() {
+	public List<String> getStudentList() {
 		return listOfStudents;
 	}
 	
