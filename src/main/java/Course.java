@@ -10,8 +10,8 @@ import org.joda.time.format.DateTimeFormatter;
 public class Course {
 
 	private String courseName;
-	private List<String> listOfModules = new ArrayList<String>();
-	private List<String> listOfStudents = new ArrayList<String>();
+	private ArrayList<String> listOfModules = new ArrayList<String>();
+	private ArrayList<String> listOfStudents = new ArrayList<String>();
 	DateTime acadStartDate = new  DateTime();
 	DateTime acadEndDate = new DateTime();
 	
@@ -39,13 +39,13 @@ public class Course {
 	
 	
 	// Accessor method for module name
-	public List<String> getModuleList() {
+	public ArrayList<String> getModuleList() {
 		return listOfModules;
 	}
 	
 	
 	// Accessor method for list of students
-	public List<String> getStudentList() {
+	public ArrayList<String> getStudentList() {
 		return listOfStudents;
 	}
 	
