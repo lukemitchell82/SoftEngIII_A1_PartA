@@ -9,8 +9,8 @@ public class Module{
 	
 	private String moduleName;
 	private String moduleID;
-	private List<String> students = new ArrayList<String>();
-	private List<String> linkedCourses = new ArrayList<String>();
+	private List<Student> students = new ArrayList<>();
+	private List<Course> linkedCourses = new ArrayList<>();
 	
 	// Module Constructor
 	Module(String moduleName, String moduleID) {
@@ -39,24 +39,28 @@ public class Module{
 	
 	
 	// Adds students to Module's ArrayList 'students'
-	public void addStudent(String s) {
+	public void addStudent(Student s) {
 		students.add(s);
 	}
 	
 	
 	// Accessor method for students
-	public List<String> getStudents() {
+	public List<Student> getStudents() {
 		return students;
 	}
 	
 	
 	// Adds a module's associated course to ArrayList 'linkedCourses'
-	public void addLinkedCourses(String s) {
-		linkedCourses.add(s);
+	public void addLinkedCourses(Course c) {
+		linkedCourses.add(c);
 	}
 	
 	// Accessor method for linked courses
-	public List<String> getLinkedCourses() {
+	public List<Course> getLinkedCourses() {
 		return linkedCourses;
+	}
+	
+	public String toString() {
+		return moduleName + ", " + moduleID + ", " + students + ", " + linkedCourses;
 	}
 }
