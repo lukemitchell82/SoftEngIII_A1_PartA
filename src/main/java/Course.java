@@ -1,6 +1,3 @@
-// Luke Mitchell
-// 17280041
-
 // Import necessary libraries
 import java.util.*;
 import org.joda.time.DateTime;
@@ -10,8 +7,8 @@ import org.joda.time.format.DateTimeFormatter;
 public class Course {
 
 	private String courseName;
-	private ArrayList<Module> listOfModules = new ArrayList<>();
-	private ArrayList<Student> listOfStudents = new ArrayList<>();
+	private List<String> listOfModules = new ArrayList<>();
+	private List<String> listOfStudents = new ArrayList<>();
 	DateTime acadStartDate = new  DateTime();
 	DateTime acadEndDate = new DateTime();
 	
@@ -39,23 +36,24 @@ public class Course {
 	
 	
 	// Adds modules to modules ArrayList
-	public void addToModuleList(Module m) {
-		listOfModules.add(m);
+	public void addToModuleList(String s) {
+		listOfModules.add(s);
 	}
 	
 	// Accessor method for list of modules
-	public ArrayList<Module> getModuleList() {
+	public List<String> getModuleList() {
+
 		return listOfModules;
 	}
 	
 	
 	// Adds students to students ArrayList
-	public void addToStudentList(Student s) {
+	public void addToStudentList(String s) {
 		listOfStudents.add(s);
 	}
 	
 	// Accessor method for list of students
-	public List<Student> getStudentList() {
+	public List<String> getStudentList() {
 		return listOfStudents;
 	}
 	
@@ -79,10 +77,5 @@ public class Course {
 	
 	public DateTime getEndDate() {
 		return acadEndDate;
-	}
-	
-	
-	public String toString() {
-		return courseName + ", " + listOfModules + ", " + listOfStudents + ", " + acadStartDate + ", " + acadEndDate;
 	}
 }

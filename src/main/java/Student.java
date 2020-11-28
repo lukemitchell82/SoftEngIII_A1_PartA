@@ -1,6 +1,3 @@
-// Luke Mitchell
-// 17280041
-
 // Import necessary libraries
 import java.util.*;
 
@@ -10,7 +7,7 @@ public class Student {
 	private String dob;
 	private int id;
 	private String course;
-	private List<Module> modules = new ArrayList<>();
+	private List<String> modules = new ArrayList<>();
 	private String username;
 	
 	// Student constructor
@@ -69,16 +66,18 @@ public class Student {
 	}
 	
 	// Adds a module to Student's ArrayList called modules
-	public void addModule(Module m) {
-		modules.add(m);
+	public void addModule(String s) {
+		modules.add(s);
 	}
 	
 	// Accessor method for modules a student is enrolled in
-	public List<Module> getModules() {
+	public List<String> getModules() {
 		return modules;
 	}
 	
+	@Override
 	public String toString() {
-		return name + ", " + getUsername() + ", " + modules +", " + course;
+		return "\n        Name: " + getName() + "\n        Username: " + getUsername() + "\n        Assigned Modules: "
+	+ getModules() + "\n        Enrolled in: " + getCourse();
 	}
 }

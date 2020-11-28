@@ -21,11 +21,4 @@
 </dependency>
 </dependencies>
 
-  <!-- I found that these lines of code actually caused problems for me
-  <properties>
-  	<maven.compiler.source>11</maven.compiler.source>
-	<maven.compiler.target>11</maven.compiler.target>
-  </properties> -->
-  
-  
 </project>
